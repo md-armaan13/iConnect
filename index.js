@@ -1,6 +1,11 @@
 const express= require('express');
 const app= express();
 const port=8000;
+const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT LIBRARY
+
+app.use(expressLayouts); // TELLING APP TO USE LIBRARY "IT SHOULD BE BEFORE ROUTES"
+
+
 
 // using express router 
 app.use('/',require('./routes/index')); 
