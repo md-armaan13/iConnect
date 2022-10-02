@@ -4,6 +4,16 @@ const port=8000;
 const db= require('./config/mongoose');
 const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT LIBRARY
 
+// INCLUDING COOKIE PARSER TO ACCESS THE COOKIES
+const cookieParser= require('cookie-parser');
+
+
+// TO READ POST REQUEST 
+app.use(express.urlencoded());
+
+// MIDDLEWARE TO USE COOKIE
+app.use(cookieParser());
+
 
 app.use(express.static('./assets'));//   TELLING APP TO USE STATIC FOLDER FOR CSS AND JS FILES
 

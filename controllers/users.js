@@ -17,6 +17,8 @@ module.exports.post= (req,res)=>{
 
 }
 
+
+//render sign in page to layout
 module.exports.Sign_In= (req,res)=>{
 
     return res.render('user_sign_in',{
@@ -25,11 +27,19 @@ module.exports.Sign_In= (req,res)=>{
 };
 
 
-
+// render sign up page to layout
 module.exports.Sign_Up= (req,res)=>{
 
     return res.render('user_sign_up',{
         title: "iConnect | Sign Up"
     });
-};
 
+};
+ // creating user when user signup
+module.exports.Create_user= (req,res)=>{
+
+}
+//creating session when user sign in
+module.exports.Create_session= (req,res)=>{
+    
+}
