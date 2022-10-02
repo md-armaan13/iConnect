@@ -25,3 +25,11 @@ module.exports.Sign_In= (req,res)=>{
 };
 
 
+
+module.exports.Sign_Up= (req,res)=>{
+
+    return res.render('user_sign_up',{
+        title: "iConnect | Sign Up"
+    });
+};
+
