@@ -3,9 +3,18 @@ const app= express();
 const port=8000;
 const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT LIBRARY
 
+
+app.use(express.static('./assets'));//   TELLING APP TO USE STATIC FOLDER FOR CSS AND JS FILES
+
 app.use(expressLayouts); // TELLING APP TO USE LIBRARY "IT SHOULD BE BEFORE ROUTES"
 
-app.use(express.static('./assets'));
+// EXTRACT STYLES AND SCRIPT FROM SUBPAGES INTO THE LAYOUTS
+app.set('layout extractStyles',true);
+app.set('layout extractScripts',true);
+
+
+
+
 
 // using express router 
 app.use('/',require('./routes/index')); 
