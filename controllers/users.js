@@ -8,8 +8,28 @@ module.exports.user_profile= (req,res)=>{ // exporting the fuction so that route
 
 
 module.exports.profile= (req,res)=>{ 
+    if(req.cookies.user_id){
+        User.findById(req.cookies.user_id,(err,user)=>{
+            if(err){console.log('error in finding the user in db'); return;}
+           
+            if(user){
+    
+               return res.render('user_profile',{
+                title: "iConnect | Profile",
+                userdata: user,
+               });
+    
+            }else{
+                return res.redirect('/user/sign-in');
+            }
+        })
+    }else{
+        return res.redirect('/user/sign-in');
+    }
+    
+   
 
-    return res.send('<h1>Armaan"s Profile</h1>');
+    
 
 }
 
@@ -89,5 +109,17 @@ module.exports.Create_session= (req,res)=>{
          }
 
     });
+
+}
+
+module.exports.Sign_out =(req,res)=>{
+
+    if(req.cookies.user_id){
+        res.clearCookie('user_id')
+       return res.redirect('/user/sign-in');
+    }else{
+        return res.redirect('/user/sign-in');
+    }
+
 
 }

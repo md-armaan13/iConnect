@@ -17,5 +17,6 @@ router.get('/sign-up',userController.Sign_Up); // route for sign up
 
 router.post('/create',userController.Create_user); // route to fetch form data of sign up
 router.post('/create-session',userController.Create_session);
+router.get('/sign-out',userController.Sign_out);
 
 module.exports=router;
