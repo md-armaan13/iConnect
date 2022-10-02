@@ -7,4 +7,9 @@ const mongoose = require('mongoose');
 
  db.on('error', console.error.bind(console, "Error connecting te MongoD8"));
 
-  db.once('open',)
+  db.once('open',function(){
+
+    console.log('connected to data base');
+  });
+
+  module.exports= db;
