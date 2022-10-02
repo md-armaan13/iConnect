@@ -10,5 +10,5 @@ router.get('/',userController.user_profile);
 router.get('/profile',userController.profile);
 
 router.get('/post',userController.post);
-
+router.get('/sign-in',userController.Sign_In);
 module.exports=router;
