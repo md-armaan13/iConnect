@@ -5,7 +5,7 @@ const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT L
 
 app.use(expressLayouts); // TELLING APP TO USE LIBRARY "IT SHOULD BE BEFORE ROUTES"
 
-
+app.use(express.static('./assets'));
 
 // using express router 
 app.use('/',require('./routes/index')); 
