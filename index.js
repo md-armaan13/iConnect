@@ -5,7 +5,13 @@ const db= require('./config/mongoose');
 const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT LIBRARY
 
 // INCLUDING COOKIE PARSER TO ACCESS THE COOKIES
-const cookieParser= require('cookie-parser');
+ const cookieParser= require('cookie-parser');
+
+
+// passport modules
+const session = require('express-session');// used for session cookies
+const passport= require('passport');
+const passportLocal = require('./config/passpot-local-strategy');
 
 
 // TO READ POST REQUEST 
@@ -27,8 +33,7 @@ app.set('layout extractScripts',true);
 
 
 
-// using express router 
-app.use('/',require('./routes/index')); 
+
 
 
 
@@ -36,7 +41,26 @@ app.use('/',require('./routes/index'));
 app.set('view engine','ejs');
 app.set('views','./views');
 
+//just after the views 
+app.use(session({
 
+    name: 'iConnect',
+    //TO-DO CHANGE THE SECRET KEY BEFORE DEPLOYMENT
+    secret:'connection',
+    saveUninitialized :false,
+     resave: false,
+     cookie:{
+        maxAge :(1000*60*100), //  TO SET TIMESPAN OF COOKIE IN BROWSER(IN MILLISECONDS)
+     }
+
+}));
+ // middleware for passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+// using express router 
+// IT SHOULD BE USED BELOW PASSPORT MIDDLEWARE
+app.use('/',require('./routes/index')); 
 
 
 app.listen(port,function(err) {

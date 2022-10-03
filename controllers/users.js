@@ -66,5 +66,5 @@ module.exports.Create_user= (req,res)=>{
 }
 //creating session when user sign in
 module.exports.Create_session= (req,res)=>{
-    
+    return res.redirect('/');
 }
