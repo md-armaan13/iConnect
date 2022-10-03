@@ -36,7 +36,7 @@ module.exports.Sign_In= (req,res)=>{
 // render sign up page to layout
 module.exports.Sign_Up= (req,res)=>{
     if(req.isAuthenticated()){
-       return res.redirect('/user/user_profile')
+       return res.redirect('/user/profile')
     }
     return res.render('user_sign_up',{
         title: "iConnect | Sign Up"
