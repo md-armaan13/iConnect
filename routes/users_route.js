@@ -16,6 +16,7 @@ router.get('/sign-up',userController.Sign_Up); // route for sign up
 
 router.post('/create',userController.Create_user);
 
+router.get('/sign-out',userController.Destroy_session);
 
 // use passport as middleware to authenticate
 router.post('/create-session',passport.authenticate(

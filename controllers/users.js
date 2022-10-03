@@ -74,3 +74,14 @@ module.exports.Create_user= (req,res)=>{
 module.exports.Create_session= (req,res)=>{
     return res.redirect('/');
 }
+
+module.exports.Destroy_session=(req,res)=>{
+    req.logout(function(err){
+        if(err){
+            return;
+        }
+    });
+
+    return res.redirect('/');
+
+}
