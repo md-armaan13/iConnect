@@ -44,11 +44,11 @@ app.set('views','./views');
 //just after the views 
 app.use(session({
 
-    name: 'iConnect',
+    name: 'iConnect', // name of cookie
     //TO-DO CHANGE THE SECRET KEY BEFORE DEPLOYMENT
     secret:'connection',
-    saveUninitialized :false,
-     resave: false,
+    saveUninitialized :false, // if user not logged in so we don't store in session cookie
+     resave: false, // prevent any repeated saving of data if it is not changed
      cookie:{
         maxAge :(1000*60*100), //  TO SET TIMESPAN OF COOKIE IN BROWSER(IN MILLISECONDS)
      }
@@ -57,6 +57,8 @@ app.use(session({
  // middleware for passport
 app.use(passport.initialize());
 app.use(passport.session());
+ // IMPORTANT OUR SESSION DATA IS TEMPORARY STORED
+app.use(passport.setAuthenticatedUser);
 
 // using express router 
 // IT SHOULD BE USED BELOW PASSPORT MIDDLEWARE
