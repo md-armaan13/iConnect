@@ -2,9 +2,11 @@ const User = require('../models/user');// ACQUIRING THE MODEL SO THAT TO CREATE 
 
 module.exports.user_profile= (req,res)=>{ // exporting the fuction so that router can use
 
-    return res.send('<h1>Users Profile</h1>');
+    return res.render('user_profile',{
+        title: 'iConnect |User Profile'
+    });
 
-}
+};
 
 
 module.exports.profile= (req,res)=>{ 
@@ -22,7 +24,9 @@ module.exports.post= (req,res)=>{
 
 //render sign in page to layout
 module.exports.Sign_In= (req,res)=>{
-
+        if(req.isAuthenticated()){
+          return  res.redirect('/user/profile')
+        }
     return res.render('user_sign_in',{
         title: "iConnect | Sign In"
     });
@@ -31,7 +35,9 @@ module.exports.Sign_In= (req,res)=>{
 
 // render sign up page to layout
 module.exports.Sign_Up= (req,res)=>{
-
+    if(req.isAuthenticated()){
+       return res.redirect('/user/user_profile')
+    }
     return res.render('user_sign_up',{
         title: "iConnect | Sign Up"
     });

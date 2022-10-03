@@ -57,7 +57,7 @@ app.use(session({
  // middleware for passport
 app.use(passport.initialize());
 app.use(passport.session());
- // IMPORTANT OUR SESSION DATA IS TEMPORARY STORED
+ // IMPORTANT OUR SESSION DATA IS TEMPORARY STORED 
 app.use(passport.setAuthenticatedUser);
 
 // using express router 

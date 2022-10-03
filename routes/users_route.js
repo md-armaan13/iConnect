@@ -7,9 +7,8 @@ const userController = require('../controllers/users');
 
 router.get('/',userController.user_profile);
 
-router.get('/profile',passport.checkAuthentication,userController.profile); // making profile page acesible when user is sign in
+router.get('/profile',passport.checkAuthentication,userController.user_profile); // making profile page acesible when user is sign in
 
-router.get('/post',userController.post);
 
 router.get('/sign-in',userController.Sign_In); // route for sign in
 
