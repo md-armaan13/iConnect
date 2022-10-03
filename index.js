@@ -6,7 +6,8 @@ const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT L
 
 // INCLUDING COOKIE PARSER TO ACCESS THE COOKIES
  const cookieParser= require('cookie-parser');
-
+// INCLUDING SASS MIDDLEWARE 
+const sassMiddleware =require('node-sass-middleware');
 
 // passport modules
 const session = require('express-session');// used for session cookies
@@ -16,6 +17,15 @@ const passportLocal = require('./config/passpot-local-strategy');
 const MongoStore = require('connect-mongo');
 // because storing session info in databse
 
+//PUT BEFORE SERVER START
+app.use(sassMiddleware({
+
+    src : '/assets/scss',
+    dest :'/assets/css',
+    debug: 'true',
+    outputStyle : 'extended',
+    prefix : '/css'
+}))
 
 // TO READ POST REQUEST 
 app.use(express.urlencoded());
