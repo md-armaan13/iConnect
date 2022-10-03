@@ -13,6 +13,9 @@ const session = require('express-session');// used for session cookies
 const passport= require('passport');
 const passportLocal = require('./config/passpot-local-strategy');
 
+const MongoStore = require('connect-mongo');
+// because storing session info in databse
+
 
 // TO READ POST REQUEST 
 app.use(express.urlencoded());
@@ -42,6 +45,7 @@ app.set('view engine','ejs');
 app.set('views','./views');
 
 //just after the views 
+//mongo store to store session cookie in db
 app.use(session({
 
     name: 'iConnect', // name of cookie
@@ -51,7 +55,15 @@ app.use(session({
      resave: false, // prevent any repeated saving of data if it is not changed
      cookie:{
         maxAge :(1000*60*100), //  TO SET TIMESPAN OF COOKIE IN BROWSER(IN MILLISECONDS)
-     }
+     },
+     store:MongoStore.create({
+    
+            mongoUrl:'mongodb://localhost:27017/',
+            autoRemove: 'disabled'
+        
+     },function(err){
+        console.log(err,"error on setting connection");
+     })
 
 }));
  // middleware for passport
