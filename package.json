@@ -23,6 +23,7 @@
     "mongoose": "^6.6.3",
     "node-sass-middleware": "^1.0.1",
     "passport": "^0.6.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "tailwindcss": "^1.9.6"
   }
 }
