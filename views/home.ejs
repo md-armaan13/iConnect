@@ -47,11 +47,16 @@
     
     <ul>
       <%for(i of post){%>
-
+        <p>
+          <%=i.user.name%>
+        </p>
         <li>
           <%=i.content%>
         </li>
+        <br>
+        
 
+   
         <%}%>
     </ul>
   </div>
