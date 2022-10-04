@@ -206,11 +206,13 @@
                         <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
                     </div>
                     <div id="comments-section" >
-                        <form action="" method="post"></form>
+                        <form action="/comments" method="post">
                         <div class="md-form mb-4 pink-textarea active-pink-textarea-2 ">
                             <label for="form17" style="color:black ;" class="ml-2">Comments :</label>
-                            <textarea id="form17" class="md-textarea form-control" rows="2" placeholder="Type Here.."></textarea>
-                            <input class="btn btn-primary ml-3 my-2" type="submit" value="Post">
+                            <textarea id="form17" name="content" class="md-textarea form-control" rows="2" placeholder="Type Here.."></textarea>
+                           <!-- PASSING THE ID OF THE POST TO THE CONTROLLER IN THE HIDDEN INPUT -->
+                            <input type="hidden" name="post" id="" value="<%=i._id%>">
+                            <input class="btn btn-primary ml-3 my-2" type="submit" value="Add Comment">
                           </div>
                         </form>
                         </div>
