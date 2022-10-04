@@ -5,13 +5,14 @@
     <h1>
         iConnect <%=title%>
     </h1>
-    <form action="" id="new-post" method="post" >
+    <form action="/user-post" id="new-post" method="post" >
     <div class="flex justify-center">
         <div class="mb-3 xl:w-96">
           <label for="exampleFormControlTextarea1" class="form-label inline-block mb-2 text-gray-700"
             >Posts:</label
           >
           <textarea
+          name="content"
             class="
               form-control
               block
@@ -37,6 +38,7 @@
         <div class="flex space-x-2 justify-center">
           </div>
       </div>
+      <a href="">
       <button type="submit" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Post</button>
-
+    </a>
     </form>
