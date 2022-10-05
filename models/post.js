@@ -15,8 +15,8 @@ const postSchema= new  mongoose.Schema({
     comments:[
         {
         type: mongoose.Schema.Types.ObjectId,
-        ref : 'Comments'
-    }
+        ref : 'Comment' // wirte refernce to module export name
+        }
              ]
 },
 {

@@ -64,7 +64,7 @@
                             <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
                                 <div class="form-group">
                                     <label class="sr-only" for="message">post</label>
-                                    <textarea name="content" class="form-control" id="message" rows="3" placeholder="What are you thinking?"></textarea>
+                                    <textarea name="content" class="form-control" id="message" rows="3" placeholder="What are you thinking?" required></textarea>
                                 </div>
 
                             </div>
@@ -146,7 +146,7 @@
                     </div>
                     <div class="card-footer">
                         <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
-                        <button id="comment-btn" class="card-link"><i class="fa fa-comment" ></i> Comment</button>
+                        <button id="comment-btn " class="card-link comment-btn"><i class="fa fa-comment comment-btn" ></i> Comment</button>
                         <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
                     </div>  
                     <div id="comments-section" >
@@ -157,7 +157,28 @@
                         <input class="btn btn-primary ml-3 my-2" type="submit" value="Post">
                       </div>
                     </form>
+
                     </div>
+                    <hr>
+                    <div class="comment-box">
+                        <div class="heading">
+                           <img src="../assets/images/pngwing.com.png" alt="emy">
+                           
+                        </div>
+                                  
+                           <div class="content">
+                               <div class="h-in">
+                               
+                               <div class="cont">
+                                   <strong><a class="pull-left" href="https://www.facebook.com/Djelfanetwork/">Eman Salah </a></strong>
+                               <small class="pull-right">23-08-2017</small>
+                               <br>
+                               </div  >
+                               <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction	</p>
+                               </div>
+                            
+                           </div>
+                   </div>
                 </div>
                 <!-- Post /////-->
 
@@ -202,20 +223,41 @@
                     </div>
                     <div class="card-footer">
                         <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
-                        <button id="comment-btn" class="card-link"><i class="fa fa-comment" ></i> Comment</button>
+                        <button id="" class="card-link comment-btn" ><i class="fa fa-comment " ></i> Comment</button>
                         <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
                     </div>
                     <div id="comments-section" >
-                        <form action="/comments" method="post">
+                        <form action="/comments" method="post" >
                         <div class="md-form mb-4 pink-textarea active-pink-textarea-2 ">
                             <label for="form17" style="color:black ;" class="ml-2">Comments :</label>
-                            <textarea id="form17" name="content" class="md-textarea form-control" rows="2" placeholder="Type Here.."></textarea>
+                            <textarea id="form17" name="content" class="md-textarea form-control" rows="2" placeholder="Type Here.." required></textarea>
                            <!-- PASSING THE ID OF THE POST TO THE CONTROLLER IN THE HIDDEN INPUT -->
                             <input type="hidden" name="post" id="" value="<%=i._id%>">
                             <input class="btn btn-primary ml-3 my-2" type="submit" value="Add Comment">
                           </div>
                         </form>
                         </div>
+                        <hr>
+                            <%for(comment of i.comments){%>
+                                <div class="comment-box">
+                                   
+                                              
+                                       <div class="content">
+                                           <div class="h-in">
+                                           
+                                           <div class="cont">
+                                               <strong><a class="pull-left" href="https://www.facebook.com/Djelfanetwork/"><%=comment.user.name %></a></strong>
+                                           <small class="pull-right">23-08-2017</small>
+                                           <br>
+                                           </div  >
+                                           <p>	<%=comment.content%></p>
+                                           </div>
+                                        
+                                       </div>
+                               </div>
+
+
+                                <%}%>
                 </div>
                 <%}%>
                 <!-- Post /////-->
