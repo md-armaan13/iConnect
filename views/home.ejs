@@ -80,7 +80,7 @@
                         </div>
                         <div class="btn-toolbar justify-content-between">
                             <div class="btn-group">
-                                <button type="submit" class="btn btn-primary">share</button>
+                                <button type="submit" class="button3">share</button>
                             </div>
                             <div class="btn-group">
                                 <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -151,10 +151,13 @@
                     </div>  
                     <div id="comments-section" >
                         <form action="" method="post">
-                    <div class="md-form mb-4 pink-textarea active-pink-textarea-2 ">
-                        <label for="form17" style="color:black ;" class="ml-2">Comments :</label>
-                        <textarea id="form17" class="md-textarea form-control" rows="2" placeholder="Type Here.."></textarea>
-                        <input class="btn btn-primary ml-3 my-2" type="submit" value="Post">
+                    <div class="md-form mb-1 pink-textarea active-pink-textarea-2 ">
+                        
+                        <textarea id="form17" class="md-textarea form-control my-2" rows="2" placeholder="Type Here.."></textarea>
+                        <button type="submit" class="button3 mx-2 my-3">Add Comment</button>
+                        <br>
+                
+
                       </div>
                     </form>
 
@@ -228,12 +231,14 @@
                     </div>
                     <div id="comments-section" >
                         <form action="/comments" method="post" >
-                        <div class="md-form mb-4 pink-textarea active-pink-textarea-2 ">
-                            <label for="form17" style="color:black ;" class="ml-2">Comments :</label>
-                            <textarea id="form17" name="content" class="md-textarea form-control" rows="2" placeholder="Type Here.." required></textarea>
-                           <!-- PASSING THE ID OF THE POST TO THE CONTROLLER IN THE HIDDEN INPUT -->
+                        <div class="md-form mb-1 pink-textarea active-pink-textarea-2 ">
+                            <textarea id="form17" name="content" class="md-textarea form-control my-2" rows="2" placeholder="Type Here.." required></textarea>
+                           
+                            <!-- PASSING THE ID OF THE POST TO THE CONTROLLER IN THE HIDDEN INPUT -->
                             <input type="hidden" name="post" id="" value="<%=i._id%>">
-                            <input class="btn btn-primary ml-3 my-2" type="submit" value="Add Comment">
+                            <button type="submit" class="button3 mx-2 my-3">Add Comment</button>
+                            
+            
                           </div>
                         </form>
                         </div>
