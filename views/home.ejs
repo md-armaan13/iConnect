@@ -257,7 +257,22 @@
                                            <div class="cont">
                                                <strong><a class="pull-left" href="https://www.facebook.com/Djelfanetwork/"><%=comment.user.name %></a></strong>
                                            <small class="pull-right">23-08-2017</small>
-                                           <br>
+                                          
+                                            <div class="dropdown delete-comment">
+                                            <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration:none ;">
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                                <div class="h6 dropdown-header">Configuration</div>
+                                                <a class="dropdown-item" href="#">Save</a>
+        
+                                                <%if(locals.user && locals.user.id==comment.user.id){%>
+                                                <a class="dropdown-item" href="/comments/delete-comment/<%=comment.id%>">Delete</a>
+                                                <%}%>
+        
+                                                <a class="dropdown-item" href="#">Report</a>
+                                            </div>
+                                        </div>
                                            </div  >
                                            <p>	<%=comment.content%></p>
                                            </div>

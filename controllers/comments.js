@@ -28,3 +28,32 @@ module.exports.Users_comment=(req,res)=>{
 
      });
 }
+
+
+module.exports.deleteComment= (req,res)=>{
+
+    if(!req.isAuthenticated()){
+        return res.redirect('/user/sign-in'); //CHECK IF USER IS SIGN IN
+     }
+
+     Comment.findById(req.params.id,(err,comment)=>{
+
+        if(comment.user==req.user.id){
+
+            let postid=comment.post;
+            comment.remove();
+
+             Post.findByIdAndUpdate(postid,{$pull :{comments:req.params.id}},(err,post)=>{
+                    return res.redirect('back')
+             })
+
+        }else{
+
+            return res.redirect('back');
+
+        }
+
+     })
+
+
+}

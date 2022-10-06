@@ -123,3 +123,14 @@ h1{
         }
       }
     }
+
+    .delete-comment{
+      display: inline-block;
+        top: -8px;
+        left: 177px;
+        
+    }
+    .dropdown-toggle::after {
+      display: none;
+
+    }
