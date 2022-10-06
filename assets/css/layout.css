@@ -91,7 +91,7 @@ a {
   display: inline-block;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
-  color: #fff;
+  color: white !important;
   font-size: 1rem;
   letter-spacing: .15rem;
   transition: all .3s;
@@ -115,7 +115,8 @@ a {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: darkcyan;
+    color: white;
+    background-color: #4285F4;
     transition: all .3s;
     border-radius: 10rem;
     z-index: -1; }
@@ -125,10 +126,10 @@ a {
       width: 100%; }
 
 .button1:after {
-  background-color: yellow; }
+  background-color: #a0d341; }
 
 .button1:before {
-  background-color: #d8d82e; }
+  background-color: #eeee22; }
 
 .button2:after {
   background-color: #f10808; }
