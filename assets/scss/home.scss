@@ -134,3 +134,36 @@ h1{
       display: none;
 
     }
+
+    .card-body{
+      .card-title{
+        
+    font-size: 1.1rem;
+    font-weight: 650;
+    color: grey;
+      }
+
+      .friend-info{
+        padding: 4px;
+      }
+
+      .friend-user-img{
+        display: inline-block;
+      }
+      .friend-user-name{
+        position: absolute;
+    padding-left: 14px;
+    padding-top: 6px;
+    font-size: 1.1rem;
+    font-family: 'FontAwesome';
+    letter-spacing: 0.05rem;
+    word-spacing: 0.08rem;
+      }
+   hr{
+    margin-bottom: 8px;
+   }
+
+    }
+    .friend-list-border{
+      border: none !important;
+    }

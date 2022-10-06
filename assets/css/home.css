@@ -119,3 +119,29 @@ h1 {
 
 .dropdown-toggle::after {
   display: none; }
+
+.card-body .card-title {
+  font-size: 1.1rem;
+  font-weight: 650;
+  color: grey; }
+
+.card-body .friend-info {
+  padding: 4px; }
+
+.card-body .friend-user-img {
+  display: inline-block; }
+
+.card-body .friend-user-name {
+  position: absolute;
+  padding-left: 14px;
+  padding-top: 6px;
+  font-size: 1.1rem;
+  font-family: 'FontAwesome';
+  letter-spacing: 0.05rem;
+  word-spacing: 0.08rem; }
+
+.card-body hr {
+  margin-bottom: 8px; }
+
+.friend-list-border {
+  border: none !important; }
