@@ -5,9 +5,9 @@ const router = express.Router();
 const userController = require('../controllers/users');
 
 
-router.get('/',userController.user_profile);
 
-router.get('/profile',passport.checkAuthentication,userController.user_profile); // making profile page acesible when user is sign in
+
+router.get('/profile/:id',userController.user_profile); // making profile page acesible when user is sign in
 
 
 router.get('/sign-in',userController.Sign_In); // route for sign in

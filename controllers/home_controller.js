@@ -1,5 +1,5 @@
 const Post= require('../models/post')
-
+const User = require('../models/user');
 module.exports.home= (req,res)=>{ // exporting the fuction so that router can use
    /* Post.find({},(err,posts)=>{
         if(err){
@@ -29,12 +29,17 @@ module.exports.home= (req,res)=>{ // exporting the fuction so that router can us
             console.log(err,'error in fetching post from db');
             return;
         }
-        
-        return res.render('home',{
-            title : "Home",
-            post :posts,
-            
+        User.find({},(err,user)=>{
+
+            return res.render('home',{
+                title : "Home",
+                post :posts,
+                all_users:user,
+                
+            });
+
         });
+       
 
     });
     

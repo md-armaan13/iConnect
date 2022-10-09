@@ -1,19 +1,23 @@
 const User = require('../models/user');// ACQUIRING THE MODEL SO THAT TO CREATE USER
 
 module.exports.user_profile= (req,res)=>{ // exporting the fuction so that router can use
+    if(!req.isAuthenticated()){
+        return res.redirect('/user/sign-in')
+     }
+     console.log(req.params.id);
 
-    return res.render('user_profile',{
-        title: 'iConnect |User Profile'
-    });
+     User.findById(req.params.id,(err,user)=>{
+            if(err){console.log(err,'error in finding user');return;}
+             console.log(req.params.id);
+            return res.render('user_profile',{
+                title: 'iConnect |User Profile',
+                user: user,
+            });
+    
+        })
+
 
 };
-
-
-module.exports.profile= (req,res)=>{ 
-
-    return res.send('<h1>Armaan"s Profile</h1>');
-
-}
 
 module.exports.post= (req,res)=>{ 
 
@@ -25,7 +29,7 @@ module.exports.post= (req,res)=>{
 //render sign in page to layout
 module.exports.Sign_In= (req,res)=>{
         if(req.isAuthenticated()){
-          return  res.redirect('/user/profile')
+          return  res.redirect('/')
         }
     return res.render('user_sign_in',{
         title: "iConnect | Sign In"
@@ -36,7 +40,7 @@ module.exports.Sign_In= (req,res)=>{
 // render sign up page to layout
 module.exports.Sign_Up= (req,res)=>{
     if(req.isAuthenticated()){
-       return res.redirect('/user/profile')
+       return res.redirect('/')
     }
     return res.render('user_sign_up',{
         title: "iConnect | Sign Up"
