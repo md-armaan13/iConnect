@@ -18,7 +18,7 @@
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                       <%=user.name%>
+                                       <%=profile_user.name%>
                                     </h5>
                                     <h6>
                                         Web Developer and Designer
@@ -34,9 +34,11 @@
                             </ul>
                         </div>
                     </div>
+                    <%if(profile_user.id==locals.user.id){%>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                       <a href="/user/edit-user"> <input type="button" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/></a>
                     </div>
+                    <%}%>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
@@ -69,7 +71,7 @@
                                                 <label>Name</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><%=user.name%></p>
+                                                <p><%=profile_user.name%></p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -77,7 +79,7 @@
                                                 <label>Email</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><%=user.email%></p>
+                                                <p><%=profile_user.email%></p>
                                             </div>
                                         </div>
                                         <div class="row">

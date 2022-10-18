@@ -11,7 +11,7 @@ module.exports.user_profile= (req,res)=>{ // exporting the fuction so that route
              console.log(req.params.id);
             return res.render('user_profile',{
                 title: 'iConnect |User Profile',
-                user: user,
+               profile_user: user,
             });
     
         })
@@ -87,5 +87,45 @@ module.exports.Destroy_session=(req,res)=>{
     });
 
     return res.redirect('/');
+
+};
+
+
+module.exports.Edit_profile = (req,res)=>{
+if(!req.isAuthenticated){
+
+    res.redirect('/');
+
+}
+    res.render('edit_profile',{
+        title: "iConnect | Edit Profile"
+    });
+
+}
+
+module.exports.Update=(req,res)=>{
+if(!req.isAuthenticated){
+    res.redirect('/');
+}
+
+if(req.user.id==req.params.id){
+
+User.findByIdAndUpdate(req.params.id,{
+    name: req.body.name,
+    email:req.body.email,
+},(err,user)=>{
+if(err){
+    console.log(err,'error in updating the user');
+    return;
+}
+
+return res.redirect('/');
+
+})
+
+}else{
+    return res.status(401).send('Unauthorised');
+
+}
 
 }

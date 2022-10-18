@@ -1,13 +1,14 @@
+const { values } = require("lodash");
 
-const comment_btn =document.getElementById('comment-btn');
 
-comment_btn.addEventListener('click',myFunction);
-var x = document.getElementById("comments-section");
-  function myFunction() {
-   
-    if (x.style.display == "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+const all_post=document.querySelectorAll('.comment-btn');
+for(let i=0;i<all_post.length;i++){
+
+  all_post[i].addEventListener('click',myFunction);
+} 
+function myFunction() {
+  const comment_id=0;
+  console.log(comment_id);
+
+
   }

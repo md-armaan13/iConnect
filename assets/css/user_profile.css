@@ -18,7 +18,8 @@ body {
 .profile-img .file {
   position: relative;
   overflow: hidden;
-  margin-top: -20%;
+  margin-top: 2%;
+  margin-left: -113px;
   width: 70%;
   border: none;
   border-radius: 0;

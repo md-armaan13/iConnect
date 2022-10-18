@@ -18,6 +18,11 @@ router.post('/create',userController.Create_user);
 
 router.get('/sign-out',userController.Destroy_session);
 
+router.get('/edit-user',userController.Edit_profile);
+
+router.post('/update/:id',userController.Update);
+
+
 // use passport as middleware to authenticate
 router.post('/create-session',passport.authenticate(
     'local',
