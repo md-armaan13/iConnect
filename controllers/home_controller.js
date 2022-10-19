@@ -1,6 +1,6 @@
 const Post= require('../models/post')
 const User = require('../models/user');
-module.exports.home= (req,res)=>{ // exporting the fuction so that router can use
+module.exports.home=  async (req,res)=>{ // exporting the fuction so that router can use
    /* Post.find({},(err,posts)=>{
         if(err){
             console.log('error in fetching post from db');
@@ -14,33 +14,35 @@ module.exports.home= (req,res)=>{ // exporting the fuction so that router can us
     });*/
 
 
-    // populating the user with the post
-    Post.find({})
-    .populate('user')
-    //population chaining 
-    .populate({
-        path:'comments', //  PATH NAME IS AS PROVIDED IN POST SCHEMA
-        populate :{
-            path: 'user'
-                }
-    })
-    .exec(function(err,posts){
-        if(err){
-            console.log(err,'error in fetching post from db');
-            return;
-        }
-        User.find({},(err,user)=>{
+    try{
 
-            return res.render('home',{
-                title : "Home",
-                post :posts,
-                all_users:user,
-                
-            });
+          // populating the user with the post
+  const posts= await Post.find({})
+  .populate('user')
+  //population chaining 
+  .populate({
+      path:'comments', //  PATH NAME IS AS PROVIDED IN POST SCHEMA
+      populate :{
+          path: 'user'
+              }
+  });
 
-        });
-       
+  const user= await User.find({});
 
-    });
+      return res.render('home',{
+          title : "Home",
+          post :posts,
+          all_users:user,
+          
+      });
+
+    }catch(err){
+
+        console.log(err,"error in home page");
+        return;
+    }
+
+
+  
     
 };

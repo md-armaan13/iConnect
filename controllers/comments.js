@@ -1,59 +1,59 @@
 const Post = require('../models/post');
 const Comment =require('../models/comment');
 
-module.exports.Users_comment=(req,res)=>{
+module.exports.Users_comment= async (req,res)=>{
 
     if(!req.isAuthenticated()){
         return res.redirect('/user/sign-in'); //CHECK IF USER IS SIGN IN
      }
-
-     Comment.create({
-        content: req.body.content,
-        user:req.user._id,
-        post : req.body.post,  // WE PASS THE ID IN HIDDEN INPUT
-     },function(err,user){
-        if(err){
-            console.log("error in creating comment");
-            return;
-        }
-        Post.findById(req.body.post,(err,user1)=>{ // FINDING THE POST TO ADD COMMENT IN THE COMMENT ARRAY
-            if(err){
-                console.log("error in finding post");
-                return;
-            }
-            user1.comments.push(user._id); // PUSHING THE COMMENT 
+     try{
+        let comment= await Comment.create({
+            content: req.body.content,
+            user:req.user._id,
+            post : req.body.post,  // WE PASS THE ID IN HIDDEN INPUT
+         });
+    
+        let user1= await Post.findById(req.body.post ); // FINDING THE POST TO ADD COMMENT IN THE COMMENT ARRAY
+    
+            user1.comments.push(comment._id); // PUSHING THE COMMENT 
             user1.save();
-        });
-        return res.redirect('back');
+            return res.redirect('back');
+     }catch(err){
+        console.log(err,"error in creating comment");
+        return;
 
-     });
+     }
+   
 }
 
 
-module.exports.deleteComment= (req,res)=>{
+module.exports.deleteComment= async (req,res)=>{
 
     if(!req.isAuthenticated()){
         return res.redirect('/user/sign-in'); //CHECK IF USER IS SIGN IN
      }
+try{
+    let comment = await Comment.findById(req.params.id);
 
-     Comment.findById(req.params.id,(err,comment)=>{
+    if(comment.user==req.user.id){
 
-        if(comment.user==req.user.id){
+        let postid=comment.post;
+        comment.remove();
 
-            let postid=comment.post;
-            comment.remove();
+     let post= await  Post.findByIdAndUpdate(postid,{$pull :{comments:req.params.id}});
+                return res.redirect('back')
+    }else{
 
-             Post.findByIdAndUpdate(postid,{$pull :{comments:req.params.id}},(err,post)=>{
-                    return res.redirect('back')
-             })
+        return res.redirect('back');
+    }
 
-        }else{
+}catch(err){
 
-            return res.redirect('back');
+ console.log(err,"error in creating comment");
+        return;
 
-        }
-
-     })
+}
+  
 
 
 }
