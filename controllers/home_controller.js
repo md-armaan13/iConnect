@@ -30,7 +30,7 @@ module.exports.home=  async (req,res)=>{ // exporting the fuction so that router
   const user= await User.find({});
 
       return res.render('home',{
-          title : "Home",
+          title : "iConnect | Home",
           post :posts,
           all_users:user,
           

@@ -22,6 +22,11 @@ const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const customMiddleware= require('./config/middleware');
 //PUT BEFORE SERVER START
+
+
+//requiring noty
+
+
 app.use(sassMiddleware({
 
     src : './assets/scss',
