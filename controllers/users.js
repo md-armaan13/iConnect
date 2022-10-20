@@ -81,6 +81,7 @@ module.exports.Create_user= async (req,res)=>{
 }
 //creating session when user sign in
 module.exports.Create_session= (req,res)=>{
+    req.flash('success','Logged in successfully');
     return res.redirect('/');
 }
 
@@ -90,7 +91,7 @@ module.exports.Destroy_session=(req,res)=>{
             return;
         }
     });
-
+    req.flash('success','Logged out successfully');
     return res.redirect('/');
 
 };

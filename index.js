@@ -17,6 +17,10 @@ const passportLocal = require('./config/passpot-local-strategy');
 const MongoStore = require('connect-mongo');
 // because storing session info in databse
 
+// requiring CONNECT_FLASH
+
+const flash = require('connect-flash');
+const customMiddleware= require('./config/middleware');
 //PUT BEFORE SERVER START
 app.use(sassMiddleware({
 
@@ -81,6 +85,10 @@ app.use(passport.initialize());
 app.use(passport.session());
  // IMPORTANT OUR SESSION DATA IS TEMPORARY STORED 
 app.use(passport.setAuthenticatedUser);
+
+//FLASH MESSAGES
+app.use(flash());
+app.use(customMiddleware.setFlash);
 
 // using express router 
 // IT SHOULD BE USED BELOW PASSPORT MIDDLEWARE
