@@ -59,7 +59,7 @@
                         </ul>
                     </div>
                     <div class="card-body">
-                        <form action="/user-post" method="post">
+                        <form action="/user-post" method="post" id="user-postcreate">
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
                                 <div class="form-group">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="btn-toolbar justify-content-between">
                             <div class="btn-group">
-                                <button type="submit" class="button3">share</button>
+                                <button type="submit" class="button3" value="Clear">share</button>
                             </div>
                             <div class="btn-group">
                                 <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -187,8 +187,9 @@
 
 
                 <!--- \\\\\\\Post-->
+                <div id="post-contained">
                 <%for(i of post){%>
-                <div class="card gedf-card my-3">
+                <div class="card gedf-card my-3" id="<%=i._id%>">
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex justify-content-between align-items-center">
@@ -284,6 +285,7 @@
                                 <%}%>
                 </div>
                 <%}%>
+            </div>
                 <!-- Post /////-->
 
 
