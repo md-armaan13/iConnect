@@ -13,6 +13,9 @@
             url :'/user-post',
             data :newPost.serialize(),//THIS CONVERT FORM DATA INT JSON
             success :(data)=>{
+              if(data.data.redirect==true){
+                window.location.href = data.data.redirect_url;
+              }
               console.log(data);
             let postdata1=  createPosttoDom(data.data.post)
            $('#post-contained').prepend(postdata1)

@@ -4,7 +4,13 @@ const Comment =require('../models/comment');
 module.exports.Users_post= async (req,res)=>{
  // creating posts
  if(!req.isAuthenticated()){
-    return res.redirect('/user/sign-in');
+    return res.status(200).json({
+        data:{
+            "redirect": true,
+            "redirect_url" :"/user/sign-in"
+        },
+        message: "sign in first"
+    });
  }
    let post = await Post.create({
         content: req.body.content,
