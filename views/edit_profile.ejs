@@ -31,7 +31,12 @@
             <div class="card-body p-5">
               <h2 class="text-uppercase text-center mb-5">Edit Profile</h2>
 
-              <form action="/user/update/<%=locals.user.id%>" method="post">
+              <form action="/user/update/<%=locals.user.id%>" method="post" enctype="multipart/form-data">
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example5cg" name="username" class="form-control form-control-lg" value="<%=locals.user.username%>" />
+                  <label class="form-label" for="form3Example5cg">Your username</label>
+                </div>
 
                 <div class="form-outline mb-4">
                   <input type="text" id="form3Example1cg" name="name" class="form-control form-control-lg" value="<%=locals.user.name%>" required/>
@@ -51,6 +56,11 @@
                 <div class="form-outline mb-4">
                   <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="file" id="form3Example6cg" name="avatar" class="form-control form-control-lg"  />
+                
                 </div>
 
 

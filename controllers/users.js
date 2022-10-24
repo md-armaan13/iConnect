@@ -1,3 +1,4 @@
+const multer = require('multer');
 const User = require('../models/user');// ACQUIRING THE MODEL SO THAT TO CREATE USER
 
 module.exports.user_profile= async (req,res)=>{ // exporting the fuction so that router can use
@@ -106,32 +107,45 @@ if(!req.isAuthenticated){
     res.render('edit_profile',{
         title: "iConnect | Edit Profile"
     });
-
+ 
 }
 
-module.exports.Update=(req,res)=>{
+module.exports.Update= async(req,res)=>{
 if(!req.isAuthenticated){
     res.redirect('/');
 }
+try{
+    if(req.user.id==req.params.id){
 
-if(req.user.id==req.params.id){
+        const user= await User.findByIdAndUpdate(req.params.id);
+        User.uploadedAvatar(req,res,function(err){
 
-User.findByIdAndUpdate(req.params.id,{
-    name: req.body.name,
-    email:req.body.email,
-},(err,user)=>{
-if(err){
+            if(err){console.log(err,"multer error")}
+            user.name=req.body.name;
+            user.email=req.body.email;
+            user.username=req.body.username;
+            if(req.file){
+                //this is saving the path of uploaded file
+                user.avatar= User.avatarPath + '/' + req.file.filename;
+            }
+            console.log(req.file);
+            user.save();
+        });
+        
+        return res.redirect('/');
+        
+        
+        
+        }else{
+            return res.status(401).send('Unauthorised');
+        
+        }
+}catch(err){
+
     console.log(err,'error in updating the user');
     return;
-}
-
-return res.redirect('/');
-
-})
-
-}else{
-    return res.status(401).send('Unauthorised');
 
 }
+
 
 }

@@ -45,6 +45,8 @@ app.use(cookieParser());
 
 app.use(express.static('./assets'));//   TELLING APP TO USE STATIC FOLDER FOR CSS AND JS FILES
 
+// make the uploads path  available to the browser
+app.use('/uploads',express.static(__dirname + '/uploads'));
 app.use(expressLayouts); // TELLING APP TO USE LIBRARY "IT SHOULD BE BEFORE ROUTES"
 
 // EXTRACT STYLES AND SCRIPT FROM SUBPAGES INTO THE LAYOUTS

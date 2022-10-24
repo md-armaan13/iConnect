@@ -12,9 +12,10 @@ body{
     text-align: center;
 }
 .profile-img img{
-    width: 70%;
-    height: 100%;
-}
+    width: 150px;
+    height: 150px;
+    margin-left: 60px;
+    }
 .profile-img .file {
     position: relative;
     overflow: hidden;
@@ -94,3 +95,14 @@ body{
     font-weight: 600;
     color: #0062cc;
 }
+
+.status-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    border: 2px solid white;
+    bottom: 53px;
+    left: 45%;
+    position: absolute;
+  }
