@@ -18,6 +18,7 @@ module.exports.home=  async (req,res)=>{ // exporting the fuction so that router
 
           // populating the user with the post
   const posts= await Post.find({})
+  .sort({'updatedAt': -1})
   .populate('user')
   //population chaining 
   .populate({
