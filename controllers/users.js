@@ -1,6 +1,7 @@
 const multer = require('multer');
 const User = require('../models/user');// ACQUIRING THE MODEL SO THAT TO CREATE USER
-
+const fs=require('fs');
+const path=require('path');
 module.exports.user_profile= async (req,res)=>{ // exporting the fuction so that router can use
     if(!req.isAuthenticated()){
         return res.redirect('/user/sign-in')
@@ -125,6 +126,9 @@ try{
             user.email=req.body.email;
             user.username=req.body.username;
             if(req.file){
+                if(user.avatar&& fs.existsSync(path.join(__dirname,'..', user.avatar))){
+                    fs.unlinkSync(path.join(__dirname,'..', user.avatar));
+                }
                 //this is saving the path of uploaded file
                 user.avatar= User.avatarPath + '/' + req.file.filename;
             }
