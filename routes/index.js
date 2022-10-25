@@ -11,5 +11,7 @@ router.use('/user',require('./users_route'))
 //TELLING TO USE POST ROUTE
 router.use('/user-post',require('./posts'));
 
-router.use('/comments',require('./comments'))
+router.use('/comments',require('./comments'));
+
+router.use('/api',require('./api/index'));
  module.exports=router;
