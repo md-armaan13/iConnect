@@ -13,7 +13,7 @@ const sassMiddleware =require('node-sass-middleware');
 const session = require('express-session');// used for session cookies
 const passport= require('passport');
 const passportLocal = require('./config/passpot-local-strategy');
-
+const passportJwt = require('./config/passport-jwt-strategy');
 const MongoStore = require('connect-mongo');
 // because storing session info in databse
 
