@@ -7,7 +7,7 @@ const User = require('../models/user');
 
 
 let opt ={
-    jwtFromRequest : extractJwt.fromAuthHeaderAsBearerToken,
+    jwtFromRequest : ExtractJwt.fromAuthHeaderAsBearerToken(),
     secretOrKey : 'iConnect',// decryption key
 };
 
