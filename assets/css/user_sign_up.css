@@ -13,3 +13,27 @@
   background: -webkit-linear-gradient(to right, #84fab0, #8fd3f4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #84fab0, #8fd3f4); }
+
+  .btn {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 19px;
+    cursor: pointer
+    
+}
+
+.btn-google {
+  color: #545454;
+background-color: #ffffff;
+box-shadow: 0 1px 2px 1px #ddd;
+text-align: center;
+
+}
+
+
+.btn img {
+  position: relative;
+  left: 130px;
+    top: 17px
+}
