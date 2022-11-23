@@ -67,7 +67,7 @@ module.exports.Create_user= async (req,res)=>{
            
     if(!user){ // if user does not exist
        let user= await User.create(req.body); // creating user
-            if(err){console.log('error in creating the user in db'); return;}
+            
             return res.redirect('/user/sign-in');
     }else{
         console.log('user already exist');
