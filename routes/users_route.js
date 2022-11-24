@@ -4,8 +4,7 @@ const router = express.Router();
 
 const userController = require('../controllers/users');
 
-
-
+router.use('/reset',require('./confirmation'));
 
 router.get('/profile/:id',userController.user_profile); // making profile page acesible when user is sign in
 
