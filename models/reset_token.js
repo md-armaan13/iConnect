@@ -11,10 +11,18 @@ const resetPasswordTokenSchema = new mongoose.Schema({
     reset_Token :{
         type : String,
     },
+    isValid:{
+        type :Boolean,
+    }
+},
+{
     timestamps : true,
 
+}
+    
 
-});
+
+);
 
 const resetPasswordToken=  mongoose.model('resetPasswordToken',resetPasswordTokenSchema);
 
