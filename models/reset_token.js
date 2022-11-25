@@ -23,7 +23,7 @@ const resetPasswordTokenSchema = new mongoose.Schema({
 
 
 );
-
+resetPasswordTokenSchema.index({createdAt: 1},{expireAfterSeconds: 3600});
 const resetPasswordToken=  mongoose.model('resetPasswordToken',resetPasswordTokenSchema);
 
 module.exports=resetPasswordToken;

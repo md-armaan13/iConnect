@@ -31,7 +31,7 @@ module.exports.createToken= async (req,res)=>{
         })
 
         token= await (await token).populate('user');
-        let job = await queue.create('reset',token).save(function(err){
+        let job = await queue.create('reset',token).priority('high').save(function(err){
             if(err){console.log('error in pushing token mail to queue',err);return }
               console.log(job.id);
            })
@@ -41,11 +41,66 @@ module.exports.createToken= async (req,res)=>{
 
 
     }catch(err){
-        console.log(err,"error in creating comment");                   
+        console.log(err,"error in creating token");                   
         return;
 
     }
 
+
+
+
+}
+
+module.exports.resetPassword= async (req,res)=>{
+    try{
+        let token = await resetToken.findOne({reset_Token:req.params.reset_token});
+        console.log("here is Token",token);
+        if(!token.isValid){
+            return res.redirect('/')
+        }
+    
+        return res.render('confirm_password',{
+            token : token
+        });
+
+    }catch(err){
+        console.log(err,"error in reset password page");                   
+        return;
+
+
+    }
+    
+    
+
+}
+
+module.exports.passwordReset= async(req,res)=>{
+        if(req.body.newPassword!=req.body.confirmPassword){
+            return res.redirect('back')
+        }
+    try{
+        let user = await User.findById(req.params.id);
+        if(!user){
+            console.log("USER DOES NOT EXIST");
+            return res.redirect('/');
+        }
+
+        user.password=req.body.newPassword;
+        user.save();
+        let token = await resetToken.findById(req.params.reset_tokenid);
+        if(!token){
+            console.log("Unable to find token");
+            return res.redirect('/');
+        }
+        token.isValid= false;
+        token.save();
+        return res.redirect('/user/sign-in');
+        
+    }catch(err){
+        
+        console.log(err,"error in changing the password");                   
+        return;
+    }
 
 
 
