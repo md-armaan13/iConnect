@@ -17,7 +17,13 @@ const postSchema= new  mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref : 'Comment' // wirte refernce to module export name
         }
-             ]
+             ],
+    likes :[
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref : 'Like'
+        }
+    ]
 },
 {
     timestamps: true,
