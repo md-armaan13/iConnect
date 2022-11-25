@@ -234,12 +234,12 @@
                         <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
                         <button class="card-link comment-btn" value="<%=i.id%>" ><i class="fa fa-comment " ></i> Comment</button>
                         <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
-                        <button class="button dark">
+                       <a href="/likes/toggle/?id=<%=i._id%>&type=Post"> <button class="button-likes">
                             <div class="hand">
                                 <div class="thumb"></div>
                             </div>
                             <span>Like<span>d</span></span>
-                        </button>
+                        </button></a>
                     </div>
                     <div id="comments-section" >
                         <form action="/comments" method="post" >
@@ -277,7 +277,14 @@
                                                 <%if(locals.user && locals.user.id==comment.user.id){%>
                                                 <a class="dropdown-item" href="/comments/delete-comment/<%=comment.id%>">Delete</a>
                                                 <%}%>
-        
+                                                <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                                                <a href="/likes/toggle/?id=<%=comment.id%>&type=Comment">
+                                                <button class="button-likes">
+                                                    <div class="hand">
+                                                        <div class="thumb"></div>
+                                                    </div>
+                                                    <span>Like<span>d</span></span>
+                                                </button></a>
                                                 <a class="dropdown-item" href="#">Report</a>
                                             </div>
                                         </div>

@@ -4,7 +4,7 @@ const express = require('express');
 
  const likesController= require('../controllers/likes_controller');
 
- router.post('/toggle',passport.checkAuthentication,likesController.toggleLike);
+ router.get('/toggle',passport.checkAuthentication,likesController.toggleLike);
 
 
 
