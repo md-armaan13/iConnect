@@ -22,14 +22,18 @@ module.exports.home=  async (req,res)=>{ // exporting the fuction so that router
   .populate('user')
   //population chaining 
   .populate({
-      path:'comments', //  PATH NAME IS AS PROVIDED IN POST SCHEMA
-      populate :{
-          path: 'user'
-              }
-  });
+        path:'comments', //  PATH NAME IS AS PROVIDED IN POST SCHEMA
+        populate :[
+            {path: 'user' },
+        // changes for likes
+        // populating likes for comment
+        {path:'likes'}]
+  })
+  // populating likes for post 
+  .populate('likes'); 
 
   const user= await User.find({});
-
+  console.log(posts[0]);
       return res.render('home',{
           title : "iConnect | Home",
           post :posts,

@@ -1,6 +1,6 @@
 const Post = require('../models/post'); // including post model
 const Comment =require('../models/comment');
-
+const Like = require('../models/likes');
 module.exports.Users_post= async (req,res)=>{
  // creating posts
  if(!req.isAuthenticated()){
@@ -36,8 +36,21 @@ module.exports.delete= async (req,res)=>{
            await post.remove();
        
        let comment= await Comment.deleteMany({post: req.params.id});
-              return res.redirect('back');
+             
+        // changes done for likes 
+        //deleting likes of post when post is deleted
          
+       await Like.deleteMany({likeable : post._id,onModel :"Post"});
+        // deleting likes of every comment in the post
+
+
+        // here it will go through all the comment of the post 
+        // now we use like delete many and comment has field likes it will delete all the likes associated with it
+        await Like.deleteMany({_id:{$in : post.comments}});
+
+
+        return res.redirect('back');
+
         }else{
             return res.redirect('back');
         }
