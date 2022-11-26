@@ -33,21 +33,21 @@ module.exports.delete= async (req,res)=>{
         
         // .id means coverting the object id into string
         if(post.user==req.user.id){
-           await post.remove();
+           
        
-       let comment= await Comment.deleteMany({post: req.params.id});
+     
              
         // changes done for likes 
         //deleting likes of post when post is deleted
          
        await Like.deleteMany({likeable : post._id,onModel :"Post"});
         // deleting likes of every comment in the post
-
+        let comment= await Comment.deleteMany({post: req.params.id});
 
         // here it will go through all the comment of the post 
         // now we use like delete many and comment has field likes it will delete all the likes associated with it
-        await Like.deleteMany({_id:{$in : post.comments}});
-
+        await Like.deleteMany({likeable:{$in : post.comments},onModel:"Comment"});
+        await post.remove();
 
         return res.redirect('back');
 

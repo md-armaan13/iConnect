@@ -33,6 +33,8 @@ module.exports.toggleLike=async (req,res)=>{
             likeable.save();
             existingLikes.remove(); // removing the existing like
             deleted =true;
+            console.log("job done",likeable);
+                return res.redirect('back')
         }else{//else make a new like
             let newLike = await Like.create({
                 user: req.user._id,

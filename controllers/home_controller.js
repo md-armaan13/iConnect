@@ -33,7 +33,7 @@ module.exports.home=  async (req,res)=>{ // exporting the fuction so that router
   .populate('likes'); 
 
   const user= await User.find({});
-  console.log(posts[0]);
+ // console.log(posts[0]);
       return res.render('home',{
           title : "iConnect | Home",
           post :posts,
