@@ -1,6 +1,7 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/d4679aa4fd.js" crossorigin="anonymous"></script>
 <!------ Include the above in your HEAD tag ---------->
 <link rel="stylesheet" href="/css/user_profile.css">
 <div class="container emp-profile">
@@ -15,8 +16,11 @@
                                 Change Photo
                                 <input type="file" name="file"/>
                             </div>
+                           
                         </div>
+                      
                     </div>
+                    
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
@@ -25,6 +29,11 @@
                                     <h6>
                                         Web Developer and Designer
                                     </h6>
+                                    <%if(profile_user.id!=locals.user.id){%>
+                                        
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Add Friend</a>
+                                    
+                                   <%}%>
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">

@@ -376,6 +376,23 @@
 
                         </div>
                         </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Profiles</h5>
+                                <hr>
+                        <div class="friend-list">
+                                <%for(i of all_users){%>
+                            <div class="friend-info">
+                                <span class="friend-user-img">
+                                    <img src="/images/user.png" alt="">
+                                </span>
+                               <a href="/user/profile/<%=i.id%>"> <span class="friend-user-name"><%=i.name%></span></a>
+                            </div>
+                          
+                                <%}%>
+
+                        </div>
+                        </div>
                     </div>
             </div>
         </div>
