@@ -1,5 +1,6 @@
 const Post= require('../models/post')
 const User = require('../models/user');
+const Friendship = require('../models/friend');
 module.exports.home=  async (req,res)=>{ // exporting the fuction so that router can use
    /* Post.find({},(err,posts)=>{
         if(err){
@@ -33,12 +34,23 @@ module.exports.home=  async (req,res)=>{ // exporting the fuction so that router
   .populate('likes'); 
 
   const user= await User.find({});
+  let friend;
+  if(req.user){
+    friend = await User.findById(req.user._id).populate({
+        path : 'friendships',
+        populate :[
+            {path : 'from_user'},
+            {path : 'to_user'}
+        ]
+    });
+    console.log(friend);
+  }
  // console.log(posts[0]);
       return res.render('home',{
           title : "iConnect | Home",
           post :posts,
           all_users:user,
-          
+          friend : friend,
       });
 
     }catch(err){

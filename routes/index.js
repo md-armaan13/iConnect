@@ -13,5 +13,6 @@ router.use('/user-post',require('./posts'));
 
 router.use('/comments',require('./comments'));
 router.use('/likes',require('./likes'));
+router.use('/add-friend',require('./friends'));
 router.use('/api',require('./api/index'));
  module.exports=router;

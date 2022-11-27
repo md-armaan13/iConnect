@@ -360,23 +360,39 @@
             <div class="col-md-3 ">
                 
                 <div class="card gedf-card ">
+                    <%if(locals.user&&(friend.friendships.length!=0)){%>
                         <div class="card-body">
                             <h5 class="card-title">Friends</h5>
                                 <hr>
                         <div class="friend-list">
-                                <%for(i of all_users){%>
+                                <%for(i of friend.friendships){%>
+                                    <%if(locals.user._id!=i.from_user.id){%>
                             <div class="friend-info">
                                 <span class="friend-user-img">
                                     <img src="/images/user.png" alt="">
                                 </span>
-                               <a href="/user/profile/<%=i.id%>"> <span class="friend-user-name"><%=i.name%></span></a>
+                               <a href="/user/profile/<%=i.from_user._id%>"> <span class="friend-user-name"><%=i.from_user.name%></span></a>
                             </div>
+                            <%}%>
+                          
+                                <%}%>
+
+                                <%for(i of friend.friendships){%>
+                                    <%if(locals.user._id!=i.to_user.id){%>
+                            <div class="friend-info">
+                                <span class="friend-user-img">
+                                    <img src="/images/user.png" alt="">
+                                </span>
+                               <a href="/user/profile/<%=i.to_user._id%>"> <span class="friend-user-name"><%=i.to_user.name%></span></a>
+                            </div>
+                            <%}%>
                           
                                 <%}%>
 
                         </div>
                         </div>
                         <hr>
+                        <%}%>
                         <div class="card-body">
                             <h5 class="card-title">Profiles</h5>
                                 <hr>
