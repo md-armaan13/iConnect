@@ -2,6 +2,9 @@ const multer = require('multer');
 const User = require('../models/user');// ACQUIRING THE MODEL SO THAT TO CREATE USER
 const fs=require('fs');
 const path=require('path');
+const Friendship=require('../models/friend');
+
+
 module.exports.user_profile= async (req,res)=>{ // exporting the fuction so that router can use
     if(!req.isAuthenticated()){
         return res.redirect('/user/sign-in')
@@ -9,13 +12,19 @@ module.exports.user_profile= async (req,res)=>{ // exporting the fuction so that
      console.log(req.params.id);
 
      try{
+        let friend_exist =false;
         let user = await User.findById(req.params.id);
-
+        const friend1 = await Friendship.findOne({from_user:req.user._id,to_user :req.params.id});
+        const friend2 = await Friendship.findOne({from_user:req.params.id,to_user :req.user._id});
+        if(friend1||friend2){
+            friend_exist= true;
+        }
         console.log(req.params.id);
 
        return res.render('user_profile',{
            title: 'iConnect |User Profile',
           profile_user: user,
+          exist: friend_exist
        });
      }catch(err){
         console.log(err,"error in user profile"); 
