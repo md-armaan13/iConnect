@@ -43,7 +43,7 @@ module.exports.home=  async (req,res)=>{ // exporting the fuction so that router
             {path : 'to_user'}
         ]
     });
-    console.log(friend);
+    
   }
  // console.log(posts[0]);
       return res.render('home',{

@@ -12,7 +12,7 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-       <link rel="stylesheet" href="css/home.css">k 
+       <link rel="stylesheet" href="css/home.css">
        
     <div class="container-fluid gedf-wrapper">
         <div class="row">
@@ -410,10 +410,47 @@
                         </div>
                         </div>
                     </div>
+                    
+<div class="chat-container" id="chat-box">
+	<ul class="chat">
+		<li class="message left">
+			<img class="logo1" src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+			<p>I'm hungry!</p>
+		</li>
+		<li class="message right">
+			<img class="logo1" src="https://randomuser.me/api/portraits/men/67.jpg" alt="">
+			<p>Hi hungry, nice to meet you. I'm Dad.</p>
+		</li>
+		<li class="message left">
+			<img class="logo1" src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+			<p>DAD! I'm serious!</p>
+		</li>
+		<li class="message right">
+			<img class="logo1" src="https://randomuser.me/api/portraits/men/67.jpg" alt="">
+			<p>I thought your name was hungry...?</p>
+		</li>
+		<li class="message left">
+			<img class="logo1" src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+			<p>ARE YOU KIDDING ME?</p>
+		</li>
+		<li class="message right">
+			<img class="logo1" src="https://randomuser.me/api/portraits/men/67.jpg" alt="">
+			<p>No, I'm Dad...</p>
+		</li>
+	</ul>
+	<input type="text" class="text_input" placeholder="Message..."/>
+</div>
+
+
             </div>
         </div>
      </div>
 
      <script src="/js/home.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.min.js"></script>
-     <script src="/js/chat_engine,js"></script>
+     <script src="/js/chat_engine.js"></script>
+   <%if(locals.user){%>
+   <script>
+        new ChatEngine('chat-box','<%=locals.user.email%>')
+     </script>
+     <%}%>
