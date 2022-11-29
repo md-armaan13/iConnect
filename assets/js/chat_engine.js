@@ -26,7 +26,46 @@ class ChatEngine{
 
             self.socket.on('user_joined',function(data){
                 console.log('a user joined',data);
+            });
+
+            $('#message-submit').click(function(){
+                let msg = $('#message-input').val();
+                if(msg!=''){
+                    self.socket.emit('send_message',{
+                        message : msg,
+                        user_email :self.userEmail,
+                        chatroom : 'iConnect'
+
+                    })
+                    $('#message-input').val('');
+                }
             })
+
+        });
+
+        self.socket.on('message_received',function(data){
+            console.log('messge received',data.message);
+
+            let newmessage = $('<li>');
+                newmessage.addClass('message');
+
+            let messageType='right';
+            if(data.user_email== self.userEmail){
+                messageType='left';
+
+            }
+            newmessage.append($('<span>',{
+                'html':data.user_email
+            }));
+
+            newmessage.append($('<p>',{
+                'html':data.message,
+            }));
+
+            newmessage.addClass(messageType);
+
+            $('#chat').append(newmessage);
+
 
         })
 

@@ -21,8 +21,16 @@ module.exports.chatSockets= function(socketServer){
             // to emit in aspecific chatroom otherwise io.emit
             io.in(data.chatroom).emit('user_joined',data);
 
+             
         
-        })
+        });
+
+
+        socket.on('send_message',function(data){
+            io.in(data.chatroom).emit('message_received',data);
+        });
+
+        
       });
 
       
