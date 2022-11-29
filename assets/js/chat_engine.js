@@ -14,9 +14,19 @@ class ChatEngine{
     }
 
     connectionHandler(){
-
+        let self =this;
         this.socket.on('connect',function(){
             console.log("conection establish fron client side ");
+  //INitializing an event
+            self.socket.emit('join_room',{
+              //sending the data
+                user_email :self.userEmail,
+                chatroom: 'iConnect'
+            });
+
+            self.socket.on('user_joined',function(data){
+                console.log('a user joined',data);
+            })
 
         })
 
