@@ -294,8 +294,10 @@ h1 {
   overflow: hidden;
   padding: 15px;
   position: relative;
-  width: 320px;
-  max-width: 100%; }
+  width: 400px;
+  height: 50vh;
+  max-width: 100%;
+  overflow: scroll; }
 
 .chat {
   display: flex;
@@ -339,13 +341,13 @@ h1 {
 
 .text_input {
   font-size: 16px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: -63px;
   left: 0;
   right: 0;
   padding: 12px 15px;
   outline: none;
-  width: 80%; }
+  width: 100%; }
 
 .button4 {
   display: inline-block;
