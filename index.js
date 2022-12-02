@@ -1,9 +1,10 @@
 const express= require('express');
 const app= express();
+const env = require('./config/environment');
 const port=8000;
 const db= require('./config/mongoose');
 const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT LIBRARY
-
+const path = require('path');
 // INCLUDING COOKIE PARSER TO ACCESS THE COOKIES
  const cookieParser= require('cookie-parser');
 // INCLUDING SASS MIDDLEWARE 
@@ -38,8 +39,8 @@ console.log('chat server is listening on port 5000');
 
 app.use(sassMiddleware({
 
-    src : './assets/scss',
-    dest :'./assets/css',
+    src : path.join(__dirname,env.asset_path,'scss'),
+    dest :path.join(__dirname,env.asset_path,'css'),
     debug: 'true',
     outputStyle : 'extended',
     prefix : '/css'
@@ -52,7 +53,7 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 
 
-app.use(express.static('./assets'));//   TELLING APP TO USE STATIC FOLDER FOR CSS AND JS FILES
+app.use(express.static(env.asset_path));//   TELLING APP TO USE STATIC FOLDER FOR CSS AND JS FILES
 
 // make the uploads path  available to the browser
 app.use('/uploads',express.static(__dirname + '/uploads'));
@@ -80,7 +81,7 @@ app.use(session({
 
     name: 'iConnect', // name of cookie
     //TO-DO CHANGE THE SECRET KEY BEFORE DEPLOYMENT
-    secret:'connection',
+    secret: env.session_cookie_key,
     saveUninitialized :false, // if user not logged in so we don't store in session cookie
      resave: false, // prevent any repeated saving of data if it is not changed
      cookie:{
