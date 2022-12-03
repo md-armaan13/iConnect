@@ -1,10 +1,10 @@
-
+require('dotenv').config()
 
 const development = {
  name :"development",
- asset_path : '/assets',
+ asset_path : './assets',
  session_cookie_key : 'connection',
- db :'iConnect_development',
+ db :'iConnect_development   ',
  smtp : {
     service : 'gmail',
     host : 'smtp.gmail.com',
@@ -27,9 +27,32 @@ jwt_secret_key : 'iConnect',
 }
 
 const production ={
-
+    name :"production",
+    asset_path :process.env.ASSET_PATH,
+    session_cookie_key : process.env.SESSION_COOKIE_KEY,
+    db : process.env.DB,
+    smtp : {
+       service : 'gmail',
+       host : 'smtp.gmail.com',
+       port : 587,
+       secure : false,
+       auth : {
+   
+           user : process.env.iConnect_GMAIL_EMAIL,
+           pass : process.env.iConnect_GMAIL_PASS
+       }
+   
+   },
+   google_client_id : process.env.GOOGLE_CLIENT_ID,
+   google_client_secret : process.env.GOOGLE_CLIENT_SECRET,
+   google_callback_url : process.envGOOGLE_CALLBACK_URL,
+   
+   jwt_secret_key : process.env.JWT_SECRET_KEY,
+   
 
 }
 
 
-module.exports = development;
+//module.exports = development
+module.exports = production
+//module.exports = eval(process.env.ENV)== undefined ? development : eval(process.env.ENV);
