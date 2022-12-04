@@ -12,7 +12,8 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-       <link rel="stylesheet" href="css/home.css">
+       
+       <link rel="stylesheet" href="<%=assetPath('css/home.css')%>">
        
     <div class="container-fluid gedf-wrapper">
         <div class="row">
@@ -369,7 +370,7 @@
                                     <%if(locals.user._id!=i.from_user.id){%>
                             <div class="friend-info">
                                 <span class="friend-user-img">
-                                    <img src="/images/user.png" alt="">
+                                    <img src="<%=assetPath('images/user.png')%>"  alt="">
                                 </span>
                                <a href="/user/profile/<%=i.from_user._id%>"> <span class="friend-user-name"><%=i.from_user.name%></span></a>
                             </div>
@@ -381,7 +382,7 @@
                                     <%if(locals.user._id!=i.to_user.id){%>
                             <div class="friend-info">
                                 <span class="friend-user-img">
-                                    <img src="/images/user.png" alt="">
+                                    <img src="<%=assetPath('images/user.png')%>"  alt="">
                                 </span>
                                <a href="/user/profile/<%=i.to_user._id%>"> <span class="friend-user-name"><%=i.to_user.name%></span></a>
                             </div>
@@ -447,9 +448,10 @@
         </div>
      </div>
 
-     <script src="/js/home.js"></script>
+     
+     <script  src="<%=assetPath('js/home.js')%>"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.min.js"></script>
-     <script src="/js/chat_engine.js"></script>
+     <script  src="<%=assetPath('js/chat_engine.js')%>"></script>
    <%if(locals.user){%>
    <script>
         new ChatEngine('chat-box','<%=locals.user.email%>')

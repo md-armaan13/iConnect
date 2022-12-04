@@ -1,6 +1,7 @@
 const express= require('express');
 const app= express();
 const env = require('./config/environment');
+require('./config/view-helper.js')(app);
 
 // for writing logs to the files
 const morgan = require('morgan');
