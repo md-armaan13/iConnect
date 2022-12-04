@@ -16,3 +16,184 @@
 ::1 - - [03/Dec/2022:23:16:55 +0000] "GET /images/technology.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [03/Dec/2022:23:16:55 +0000] "GET /images/user.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [03/Dec/2022:23:16:55 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:48:59 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:48:59 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:02 +0000] "GET /js/layout.js HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:05 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:05 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:10 +0000] "GET /js/home.js HTTP/1.1" 404 149 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:10 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:10 +0000] "GET /images/technology.png HTTP/1.1" 404 160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:10 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:49:10 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:23 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:23 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:23 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /js/layout.js HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /js/home.js HTTP/1.1" 404 149 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /images/technology.png HTTP/1.1" 404 160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:24 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:32 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:32 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:38 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:38 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:38 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:39 +0000] "GET /js/layout.js HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:39 +0000] "GET /js/home.js HTTP/1.1" 404 149 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:39 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:39 +0000] "GET /images/technology.png HTTP/1.1" 404 160 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:39 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [04/Dec/2022:18:54:39 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[0mGET / [32m200[0m 337.774 ms - 77042[0m
+[0mGET /css/layout.css [33m404[0m 32.707 ms - 153[0m
+[0mGET /css/home.css [33m404[0m 44.720 ms - 151[0m
+[0mGET /js/layout.js [33m404[0m 9.241 ms - 151[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 149.861 ms - 168[0m
+[0mGET /js/home.js [33m404[0m 49.553 ms - 149[0m
+[0mGET /js/chat_engine.js [33m404[0m 183.835 ms - 156[0m
+[0mGET /images/technology.png [33m404[0m 203.456 ms - 160[0m
+[0mGET /images/user.png [33m404[0m 206.877 ms - 154[0m
+[0mGET /images/user.png [33m404[0m 12.554 ms - 154[0m
+[0mGET / [36m304[0m 573.260 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 96.633 ms - -[0m
+[0mGET /css/home.css [32m200[0m 114.154 ms - -[0m
+[0mGET / [36m304[0m 118.155 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 29.252 ms - 2531[0m
+[0mGET /css/home.css [32m200[0m 28.713 ms - 8586[0m
+[0mGET / [36m304[0m 87.253 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 8.974 ms - -[0m
+[0mGET /css/home.css [36m304[0m 7.314 ms - -[0m
+[0mGET /js/layout.js [32m200[0m 11.254 ms - 254[0m
+[0mGET /js/home.js [32m200[0m 16.392 ms - 5007[0m
+[0mGET /js/chat_engine.js [32m200[0m 10.511 ms - 2050[0m
+[0mGET /images/technology.png [32m200[0m 17.911 ms - 15292[0m
+[0mGET /images/user.png [32m200[0m 22.961 ms - 1051[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 18.719 ms - 168[0m
+[0mGET / [36m304[0m 66.298 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 11.597 ms - -[0m
+[0mGET /css/home.css [36m304[0m 10.170 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 2.748 ms - -[0m
+[0mGET /js/home.js [36m304[0m 3.876 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 2.781 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.773 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 13.303 ms - 168[0m
+[0mGET /images/user.png [36m304[0m 5.931 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 26.642 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 4.398 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 7.209 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 4.123 ms - -[0m
+[0mGET /user/sign-up [32m200[0m 21.112 ms - 6764[0m
+[0mGET /css/layout.css [36m304[0m 17.859 ms - -[0m
+[0mGET /css/user_sign_up.css [32m200[0m 24.030 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 5.890 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 4.801 ms - -[0m
+[0mGET /user/profile/%3E [36m302[0m 28.562 ms - 70[0m
+[0mGET /user/sign-in [36m304[0m 8.202 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.009 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 9.139 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 1.761 ms - -[0m
+[0mGET /user/profile/%3E [36m302[0m 12.845 ms - 70[0m
+[0mGET /user/sign-in [36m304[0m 11.265 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.103 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 7.516 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 2.109 ms - -[0m
+[0mGET /user/sign-up [36m304[0m 16.484 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 10.070 ms - -[0m
+[0mGET /css/user_sign_up.css [32m200[0m 11.671 ms - 697[0m
+[0mGET /js/layout.js [36m304[0m 3.082 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.179 ms - -[0m
+[0mGET /user/sign-up [36m304[0m 25.079 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 11.708 ms - -[0m
+[0mGET /css/user_sign_up.css [36m304[0m 5.856 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 10.405 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 4.011 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 21.496 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 7.731 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 5.967 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 5.072 ms - -[0m
+[0mPOST /user/create-session [36m302[0m 80.226 ms - 46[0m
+[0mGET / [32m200[0m 113.917 ms - 79121[0m
+[0mGET /css/layout.css [36m304[0m 5.338 ms - -[0m
+[0mGET /css/home.css [36m304[0m 14.277 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 2.877 ms - -[0m
+[0mGET /js/home.js [36m304[0m 2.249 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 2.955 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 5.136 ms - -[0m
+[0mGET /images/user.png [36m304[0m 8.119 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 20.858 ms - 168[0m
+[0mGET /user/profile/633ae3b382e2477d59209645 [32m200[0m 57.904 ms - 11489[0m
+[0mGET /css/layout.css [36m304[0m 9.147 ms - -[0m
+[0mGET /css/user_profile.css [32m200[0m 18.190 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 2.317 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.255 ms - -[0m
+[0mGET /uploads/users/avatars/avatar-1669546162668 [32m200[0m 10.071 ms - 53375[0m
+[0mGET /user/edit-user [32m200[0m 603.180 ms - 5416[0m
+[0mGET /css/layout.css [32m200[0m 40.355 ms - -[0m
+[0mGET /css/edit_profile.css [32m200[0m 37.439 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 12.236 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 7.212 ms - -[0m
+[0mGET /user/edit-user [36m304[0m 34.562 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 24.829 ms - 2531[0m
+[0mGET /css/edit_profile.css [32m200[0m 27.489 ms - 697[0m
+[0mGET /js/layout.js [36m304[0m 9.680 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 8.826 ms - -[0m
+[0mGET / [36m304[0m 100.500 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 15.752 ms - -[0m
+[0mGET /css/home.css [32m200[0m 40.696 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 6.376 ms - -[0m
+[0mGET /js/home.js [36m304[0m 2.927 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 3.108 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 10.498 ms - -[0m
+[0mGET /images/user.png [36m304[0m 7.812 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 29.617 ms - 168[0m
+[0mGET /user/sign-out [36m302[0m 26.380 ms - 46[0m
+[0mGET / [32m200[0m 93.874 ms - 77042[0m
+[0mGET /css/layout.css [36m304[0m 4.580 ms - -[0m
+[0mGET /css/home.css [32m200[0m 4.758 ms - 8586[0m
+[0mGET /js/layout.js [36m304[0m 5.013 ms - -[0m
+[0mGET /js/home.js [36m304[0m 3.599 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 10.341 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 7.128 ms - -[0m
+[0mGET /images/user.png [36m304[0m 9.389 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 20.484 ms - 168[0m
+[0mGET /user/sign-in [36m304[0m 24.918 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 5.295 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 4.483 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.464 ms - -[0m
+[0mGET /user/reset [32m200[0m 25.981 ms - 6717[0m
+[0mGET /css/layout.css [36m304[0m 6.712 ms - -[0m
+[0mGET /css/reset.css [32m200[0m 30.162 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 5.705 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.495 ms - -[0m
+[0mGET / [36m304[0m 137.385 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 35.887 ms - -[0m
+[0mGET /css/home.css [32m200[0m 34.242 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 25.075 ms - -[0m
+[0mGET /js/home.js [36m304[0m 23.947 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 20.621 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 16.955 ms - -[0m
+[0mGET /images/user.png [36m304[0m 22.147 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 37.534 ms - 168[0m
+[0mGET /user/sign-up [36m304[0m 32.932 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 22.760 ms - 2531[0m
+[0mGET /css/user_sign_up.css [32m200[0m 23.407 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 8.743 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 7.014 ms - -[0m
+[0mGET /user/sign-up [36m304[0m 19.730 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 8.217 ms - -[0m
+[0mGET /css/user_sign_up.css [32m200[0m 10.265 ms - 697[0m
+[0mGET /js/layout.js [36m304[0m 7.321 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 5.705 ms - -[0m
+[0mGET / [36m304[0m 56.706 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 7.988 ms - -[0m
+[0mGET /css/home.css [32m200[0m 12.527 ms - 8586[0m
+[0mGET /js/layout.js [36m304[0m 4.039 ms - -[0m
+[0mGET /js/home.js [36m304[0m 5.035 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 7.047 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 5.179 ms - -[0m
+[0mGET /images/user.png [36m304[0m 10.657 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 8.962 ms - 168[0m

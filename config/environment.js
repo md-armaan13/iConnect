@@ -80,6 +80,6 @@ const production ={
 }
 
 
-//module.exports = development
-module.exports = production
+module.exports = development
+//module.exports = production
 //module.exports = eval(process.env.ENV)== undefined ? development : eval(process.env.ENV);
