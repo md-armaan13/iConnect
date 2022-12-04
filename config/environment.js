@@ -1,4 +1,21 @@
 require('dotenv').config()
+const fs = require('fs');
+const rfs = require('rotating-file-stream');
+const path = require('path');
+
+
+const logDirectory = path.join(__dirname,'../production_logs');// path where logs are stored
+
+//check if logs file exist or not if not then create
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
+
+// file name is access.log rfs is used to clear log history
+const accessLogStream = rfs.createStream('access.log',{
+    interval : '1d',
+    path : logDirectory
+});
+
+
 
 const development = {
  name :"development",
@@ -22,7 +39,12 @@ google_client_secret : "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",
 google_callback_url : "http://localhost:8000/user/auth/google/callback",
 
 jwt_secret_key : 'iConnect',
-
+morgan : {
+    mode :'dev',
+    options : {
+        stream : accessLogStream
+    }
+}
 
 }
 
@@ -48,7 +70,12 @@ const production ={
    google_callback_url : process.envGOOGLE_CALLBACK_URL,
    
    jwt_secret_key : process.env.JWT_SECRET_KEY,
-   
+   morgan : {
+    mode :'combined',
+    options : {
+        stream : accessLogStream
+    }
+}
 
 }
 

@@ -1,0 +1,18 @@
+[0mGET / [36m304[0m 360.966 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 106.284 ms - -[0m
+[0mGET /css/home.css [32m200[0m 126.441 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 5.885 ms - -[0m
+[0mGET /js/home.js [36m304[0m 3.259 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 17.673 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 13.929 ms - -[0m
+[0mGET /images/user.png [36m304[0m 12.624 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 31.218 ms - 168[0m
+::1 - - [03/Dec/2022:23:16:54 +0000] "GET / HTTP/1.1" 200 18844 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:54 +0000] "GET /css/layout.css HTTP/1.1" 200 2531 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:54 +0000] "GET /css/home.css HTTP/1.1" 200 8586 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:55 +0000] "GET /js/layout.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:55 +0000] "GET /js/home.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:55 +0000] "GET /js/chat_engine.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:55 +0000] "GET /images/technology.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:55 +0000] "GET /images/user.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [03/Dec/2022:23:16:55 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"

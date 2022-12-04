@@ -1,6 +1,10 @@
 const express= require('express');
 const app= express();
 const env = require('./config/environment');
+
+// for writing logs to the files
+const morgan = require('morgan');
+
 const port=8000;
 const db= require('./config/mongoose');
 const expressLayouts = require('express-ejs-layouts'); // INCLUDING THE LAYOUT LIBRARY
@@ -34,17 +38,24 @@ chatServer.listen(5000);
 console.log('chat server is listening on port 5000');
 
 
+app.use(morgan(env.morgan.mode,env.morgan.options))
+
 //requiring noty
 
+if(env.name=='development'){
+    app.use(sassMiddleware({
 
-app.use(sassMiddleware({
+        src : path.join(__dirname,env.asset_path,'scss'),
+        dest :path.join(__dirname,env.asset_path,'css'),
+        debug: 'true',
+        outputStyle : 'extended',
+        prefix : '/css'
+    }))
 
-    src : path.join(__dirname,env.asset_path,'scss'),
-    dest :path.join(__dirname,env.asset_path,'css'),
-    debug: 'true',
-    outputStyle : 'extended',
-    prefix : '/css'
-}))
+
+}
+
+
 
 // TO READ POST REQUEST 
 app.use(express.urlencoded());
