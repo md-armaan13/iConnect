@@ -19,7 +19,7 @@ const accessLogStream = rfs.createStream('access.log',{
 
 const development = {
  name :"development",
- asset_path : './assets',
+ asset_path : './public/assets',
  session_cookie_key : 'connection',
  db :'iConnect_development   ',
  smtp : {
