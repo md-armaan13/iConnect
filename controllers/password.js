@@ -2,6 +2,7 @@ const User = require('../models/user');// ACQUIRING THE MODEL SO THAT TO CREATE 
 const resetToken = require('../models/reset_token');
 const crypto = require('crypto');
 const queue = require('../config/kue');
+const queuereset = queue.resetqueue;
 const resetmailer= require('../workers/reset_password_worker')
 
 
@@ -31,10 +32,9 @@ module.exports.createToken= async (req,res)=>{
         })
 
         token= await (await token).populate('user');
-        let job = await queue.create('reset',token).priority('high').save(function(err){
-            if(err){console.log('error in pushing token mail to queue',err);return }
-              console.log(job.id);
-           })
+        await queuereset.add({token}).then(()=>{
+            console.log("user token send")
+        });
 
            return res.redirect('back');
 

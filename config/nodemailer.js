@@ -16,7 +16,7 @@ let renderTemplate= (data,relativePath)=>{
         function(err,template){
            if(err){console.log("error in rendering template mailer",err);}
            mailHtml = template;
-            console.log(template);
+            console.log(mailHtml);
         }
     )
     console.log(data);

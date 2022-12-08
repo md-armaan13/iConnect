@@ -72,15 +72,15 @@ app.use('/uploads',express.static(__dirname + '/uploads'));
 app.use(expressLayouts); // TELLING APP TO USE LIBRARY "IT SHOULD BE BEFORE ROUTES"
 
 // EXTRACT STYLES AND SCRIPT FROM SUBPAGES INTO THE LAYOUTS
-app.set('layout extractStyles',true);
+app.set('layout extractStyles',true);       
 app.set('layout extractScripts',true);
 
 
 
 
 
-
-
+require('./workers/comment_email_worker');
+require('./workers/reset_password_worker')
 
 
 // SET UP VIEW ENGINE
