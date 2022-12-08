@@ -21,7 +21,7 @@ const development = {
  name :"development",
  asset_path : './assets',
  session_cookie_key : 'connection',
- db :'iConnect_development   ',
+ db :'iConnect_development',
  smtp : {
     service : 'gmail',
     host : 'smtp.gmail.com',

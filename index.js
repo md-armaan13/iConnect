@@ -101,7 +101,7 @@ app.use(session({
      },
      store:MongoStore.create({
     
-            mongoUrl:'mongodb://localhost:27017/',
+            mongoUrl:'mongodb+srv://mdarmaan:8VW60VlyWdkhvcK9@cluster0.kood8cw.mongodb.net/Secure?retryWrites=true&w=majority',
             autoRemove: 'disabled'
         
      },function(err){

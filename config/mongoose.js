@@ -7,7 +7,7 @@ const db=mongoose.connect('mongodb+srv://mdarmaan:8VW60VlyWdkhvcK9@cluster0.kood
     // useUnifiedToplogy: true,
     // useFindAndModify : false,
  }).then(()=>{
-  console.log("connection sucess")
+  console.log("connection success")
 
  }).catch((err)=>{
   console.log(err);
