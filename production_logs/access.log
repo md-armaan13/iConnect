@@ -629,3 +629,12 @@
 ::1 - - [10/Dec/2022:13:40:27 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 ::1 - - [10/Dec/2022:13:40:27 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 ::1 - - [10/Dec/2022:13:40:27 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+[0mGET / [32m200[0m 469.832 ms - 120378[0m
+[0mGET /css/layout.css [32m200[0m 120.098 ms - -[0m
+[0mGET /css/home.css [32m200[0m 22.719 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 6.449 ms - -[0m
+[0mGET /js/home.js [36m304[0m 2.078 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 2.634 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.576 ms - -[0m
+[0mGET /images/user.png [32m200[0m 25.319 ms - 1051[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 22.913 ms - 168[0m
