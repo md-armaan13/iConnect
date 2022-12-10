@@ -5,7 +5,7 @@ const commentsMailer = require('../mailers/comments_mailers');
 queue.process('emails',function(job,done){
 
     console.log("email worker id working",job.data);
-    commentsMailer.newComment(comment);
+    commentsMailer.newComment(job.data);
     done();
 
 })

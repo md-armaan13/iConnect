@@ -347,3 +347,285 @@
 ::1 - - [04/Dec/2022:20:34:47 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [04/Dec/2022:20:34:47 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [04/Dec/2022:20:34:47 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:06 +0000] "GET / HTTP/1.1" 200 18930 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:06 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 200 2531 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:06 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 200 8586 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:07 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 200 176 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:07 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 200 3630 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:07 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 200 948 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:07 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 200 9232 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:07 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:07 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:35 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:12:43:35 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+[0mGET / [32m200[0m 184.650 ms - 117665[0m
+[0mGET /css/layout.css [32m200[0m 78.282 ms - -[0m
+[0mGET /css/home.css [32m200[0m 76.182 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 9.933 ms - -[0m
+[0mGET /js/home.js [36m304[0m 7.813 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 4.758 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 9.040 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 25.989 ms - 168[0m
+[0mGET /images/user.png [32m200[0m 32.631 ms - 1051[0m
+[0mGET / [36m304[0m 270.158 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 34.186 ms - -[0m
+[0mGET /css/home.css [32m200[0m 34.686 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 8.433 ms - -[0m
+[0mGET /js/home.js [36m304[0m 11.381 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 16.615 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 11.872 ms - -[0m
+[0mGET /images/user.png [36m304[0m 12.471 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 31.552 ms - 168[0m
+[0mGET /css/layout.css [32m200[0m 15.724 ms - 2531[0m
+[0mGET /css/home.css [32m200[0m 15.227 ms - 8586[0m
+[0mGET / [36m304[0m 337.323 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 282.456 ms - -[0m
+[0mGET /css/home.css [32m200[0m 553.584 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 23.884 ms - -[0m
+[0mGET /js/home.js [36m304[0m 14.119 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 24.298 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 10.857 ms - -[0m
+[0mGET /images/user.png [36m304[0m 7.142 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 23.155 ms - 168[0m
+[0mGET /user/sign-in [32m200[0m 40.134 ms - 9602[0m
+[0mGET /user/css/layout.css [33m404[0m 16.219 ms - 158[0m
+[0mGET /user/js/layout.js [33m404[0m 29.491 ms - 156[0m
+[0mGET /user/images/technology.png [33m404[0m 49.863 ms - 165[0m
+[0mGET /user/css/layout.css [33m404[0m 14.434 ms - 158[0m
+[0mGET /user/sign-in [36m304[0m 21.147 ms - -[0m
+[0mGET /user/css/layout.css [33m404[0m 31.230 ms - 158[0m
+[0mGET /user/images/technology.png [33m404[0m 23.753 ms - 165[0m
+[0mGET /user/js/layout.js [33m404[0m 11.547 ms - 156[0m
+[0mGET /user/sign-in [36m304[0m 27.729 ms - -[0m
+[0mGET /user/css/layout.css [33m404[0m 21.502 ms - 158[0m
+[0mGET /user/js/layout.js [33m404[0m 8.008 ms - 156[0m
+[0mGET /user/css/layout.css [33m404[0m 5.906 ms - 158[0m
+[0mGET /user/images/technology.png [33m404[0m 7.439 ms - 165[0m
+[0mGET /user/sign-in [32m200[0m 23.061 ms - 9603[0m
+[0mGET /css/layout.css [32m200[0m 20.577 ms - 2531[0m
+[0mGET /user/js/layout.js [33m404[0m 11.665 ms - 156[0m
+[0mGET /user/images/technology.png [33m404[0m 14.231 ms - 165[0m
+[0mGET /css/layout.css [36m304[0m 5.067 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 23.120 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 14.744 ms - -[0m
+[0mGET /user/images/technology.png [33m404[0m 7.316 ms - 165[0m
+[0mGET /user/js/layout.js [33m404[0m 5.827 ms - 156[0m
+[0mGET /user/sign-in [32m200[0m 18.376 ms - 9605[0m
+[0mGET /images/technology.png [36m304[0m 3.727 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 24.298 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 3.466 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 19.826 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 2.640 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 10.105 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 2.213 ms - -[0m
+[0mGET / [32m200[0m 247.269 ms - 117671[0m
+[0mGET /css/layout.css [36m304[0m 22.860 ms - -[0m
+[0mGET /css/home.css [32m200[0m 8.645 ms - 8586[0m
+[0mGET /js/layout.js [36m304[0m 12.372 ms - -[0m
+[0mGET /js/home.js [36m304[0m 9.673 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 15.204 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 10.516 ms - -[0m
+[0mGET /images/user.png [36m304[0m 11.276 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 18.368 ms - 168[0m
+[0mGET / [36m304[0m 135.773 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 11.189 ms - -[0m
+[0mGET /css/home.css [36m304[0m 6.336 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 16.467 ms - -[0m
+[0mGET /js/home.js [36m304[0m 16.017 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 12.553 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 10.735 ms - -[0m
+[0mGET /images/user.png [36m304[0m 12.489 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 17.451 ms - 168[0m
+[0mGET /user/sign-in [36m304[0m 20.092 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 5.719 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 4.409 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 3.185 ms - -[0m
+[0mPOST /user/create-session [36m302[0m 105.034 ms - 46[0m
+[0mGET / [32m200[0m 99.642 ms - 122632[0m
+[0mGET /css/layout.css [36m304[0m 12.704 ms - -[0m
+[0mGET /css/home.css [36m304[0m 6.949 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 10.797 ms - -[0m
+[0mGET /js/home.js [36m304[0m 10.200 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 9.482 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 3.100 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 16.873 ms - 168[0m
+[0mGET /images/user.png [36m304[0m 2.111 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 6.849 ms - -[0m
+[0mGET /css/home.css [36m304[0m 6.601 ms - -[0m
+[0mGET / [36m304[0m 133.549 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 5.229 ms - -[0m
+[0mGET /css/home.css [36m304[0m 4.817 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 10.924 ms - -[0m
+[0mGET /js/home.js [36m304[0m 9.919 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 6.050 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 9.795 ms - -[0m
+[0mGET /images/user.png [36m304[0m 7.803 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 19.500 ms - 168[0m
+[0mPOST /comments [36m302[0m 134.561 ms - 88[0m
+[0mGET / [32m200[0m 232.174 ms - 125531[0m
+[0mGET /css/layout.css [36m304[0m 13.976 ms - -[0m
+[0mGET /css/home.css [36m304[0m 4.793 ms - -[0m
+[0mGET /js/layout.js [36m304[0m 4.982 ms - -[0m
+[0mGET /js/home.js [36m304[0m 9.573 ms - -[0m
+[0mGET /js/chat_engine.js [36m304[0m 6.900 ms - -[0m
+[0mGET /images/technology.png [36m304[0m 9.164 ms - -[0m
+[0mGET /images/user.png [36m304[0m 3.698 ms - -[0m
+[0mGET /assets/images/pngwing.com.png [33m404[0m 18.652 ms - 168[0m
+::1 - - [10/Dec/2022:13:08:40 +0000] "GET / HTTP/1.1" 200 18832 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:40 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:41 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:41 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:41 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:41 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:41 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:43 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:43 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:46 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:46 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:46 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:46 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:46 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:46 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:46 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:47 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:47 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:59 +0000] "GET / HTTP/1.1" 200 18772 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:08:59 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [10/Dec/2022:13:08:59 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:02 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:03 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:03 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:38 +0000] "GET / HTTP/1.1" 200 18930 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:38 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [10/Dec/2022:13:09:38 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [10/Dec/2022:13:09:39 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:39 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [10/Dec/2022:13:09:39 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [10/Dec/2022:13:09:39 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:39 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:39 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:46 +0000] "GET /user/sign-in HTTP/1.1" 200 9638 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:46 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:46 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:46 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:53 +0000] "POST /user/create-session HTTP/1.1" 302 70 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:53 +0000] "GET /user/sign-in HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:53 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:53 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:53 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:09:59 +0000] "GET /user/auth/google HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:25 +0000] "GET /user/auth/google HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:33 +0000] "GET /user/auth/google/callback?code=4%2F0AfgeXvscUfDvHRa2Idqo_9OvuXfc0E0VFqZct1v-97AR9ajAj8hAHU9CiFRDrfyLVtY6uQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent HTTP/1.1" 302 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:33 +0000] "GET / HTTP/1.1" 200 19001 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:34 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:34 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:34 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:35 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:35 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:35 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:35 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:35 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:11:56 +0000] "POST /user-post HTTP/1.1" 200 239 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:20 +0000] "POST /comments HTTP/1.1" - - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:21 +0000] "GET / HTTP/1.1" 200 23041 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:21 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:21 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:21 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:21 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:21 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:22 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:22 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:22 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:12:32 +0000] "POST /comments HTTP/1.1" 302 88 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:09 +0000] "GET / HTTP/1.1" 200 25943 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:09 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [10/Dec/2022:13:13:09 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [10/Dec/2022:13:13:10 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:10 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:10 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:10 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:10 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:10 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:13:17 +0000] "POST /comments HTTP/1.1" 302 88 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:07 +0000] "GET / HTTP/1.1" 200 28839 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:08 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:08 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:09 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:10 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:10 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:10 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:10 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:10 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:20 +0000] "POST /comments HTTP/1.1" 302 88 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET / HTTP/1.1" 200 31735 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:21 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:38 +0000] "GET /user/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:38 +0000] "GET / HTTP/1.1" 200 30919 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:38 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:38 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:39 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:39 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:39 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:39 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:39 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:39 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:41 +0000] "GET /user/profile/638ba07e21ff7c0b7e788c6a HTTP/1.1" 302 70 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:42 +0000] "GET /user/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:42 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:42 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:42 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:45 +0000] "GET /user/sign-in HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:45 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:45 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:45 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:49 +0000] "GET /user/auth/google HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:56 +0000] "GET /user/auth/google/callback?code=4%2F0AfgeXvs9wN3m5fG5L8mgG0oroXKmUu2DBbLcxjceiTDwMKhbdfqOx7X0h_lGxEmjYaobzQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent HTTP/1.1" 302 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:56 +0000] "GET / HTTP/1.1" 200 31735 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:56 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:56 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:57 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:58 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:58 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:58 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:58 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:14:58 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:02 +0000] "GET /user/profile/638ba07e21ff7c0b7e788c6a HTTP/1.1" 200 11492 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:02 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:02 +0000] "GET /css/user_profile-5a2a5c3aaa.css HTTP/1.1" 200 1815 "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:02 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:02 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:36 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:36 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:36 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:37 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:37 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:37 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:37 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:37 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:37 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:41 +0000] "GET /user/profile/638ba07e21ff7c0b7e788c6a HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:41 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:41 +0000] "GET /css/user_profile-5a2a5c3aaa.css HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:42 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:42 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:47 +0000] "GET /user/edit-user HTTP/1.1" 200 5469 "http://localhost:8000/user/profile/638ba07e21ff7c0b7e788c6a" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:47 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/user/edit-user" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:47 +0000] "GET /css/edit_profile-920663a84e.css HTTP/1.1" 200 697 "http://localhost:8000/user/edit-user" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:48 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/user/edit-user" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:15:48 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/user/edit-user" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:26 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/user/edit-user" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:26 +0000] "GET /css/layout-2e0bd9b69c.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:26 +0000] "GET /css/home-db2a787e84.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:27 +0000] "GET /js/layout-74f545c94b.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:27 +0000] "GET /images/technology-ee650a69eb.png HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:27 +0000] "GET /js/chat_engine-c7d39db619.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:27 +0000] "GET /js/home-4162fccbf4.js HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:27 +0000] "GET /images/user.png HTTP/1.1" 404 154 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+::1 - - [10/Dec/2022:13:40:27 +0000] "GET /assets/images/pngwing.com.png HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
