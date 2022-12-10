@@ -21,7 +21,7 @@ const development = {
  name :"development",
  asset_path : './assets',
  session_cookie_key : 'connection',
- db :'iConnect_development',
+ db :'iConnect_development   ',
  smtp : {
     service : 'gmail',
     host : 'smtp.gmail.com',
@@ -36,7 +36,7 @@ const development = {
 },
 google_client_id : "296060815300-llt7plclurtnd9km30ikhgspmfj4r8o0.apps.googleusercontent.com",
 google_client_secret : "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",
-google_callback_url : "http://iconnect.engineer/user/auth/google/callback",
+google_callback_url : "http://localhost:8000/user/auth/google/callback",
 
 jwt_secret_key : 'iConnect',
 morgan : {
@@ -67,7 +67,7 @@ const production ={
    },
    google_client_id : process.env.GOOGLE_CLIENT_ID,
    google_client_secret : process.env.GOOGLE_CLIENT_SECRET,
-   google_callback_url : process.env.GOOGLE_CALLBACK_URL,
+   google_callback_url : process.envGOOGLE_CALLBACK_URL,
    
    jwt_secret_key : process.env.JWT_SECRET_KEY,
    morgan : {

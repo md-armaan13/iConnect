@@ -76,7 +76,7 @@
         </div>
         <div class="card-footer">
             <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
-            <button class="card-link comment-btn" value="${i.id}" ><i class="fa fa-comment " ></i> Comment</button>
+            <button class="card-link comment-btn" value="${i._id}" ><i class="fa fa-comment " ></i> Comment</button>
             <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
         </div>
         <div id="comments-section" >
@@ -85,7 +85,7 @@
                 <textarea id="form17" name="content" class="md-textarea form-control my-2" rows="2" placeholder="Type Here.." required></textarea>
                
                 <!-- PASSING THE ID OF THE POST TO THE CONTROLLER IN THE HIDDEN INPUT -->
-                <input type="hidden" name="post" id="" value="<${i._id}">
+                <input type="hidden" name="post" id="" value="${i._id}">
                 <button type="submit" class="button3 mx-2 my-3">Add Comment</button>
                 
 
