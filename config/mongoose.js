@@ -1,15 +1,25 @@
 const mongoose = require('mongoose');
 const env = require('./environment');
 
- mongoose.connect(`mongodb://localhost/${env.db}`);
+const db=mongoose.connect('mongodb+srv://MdArmaan13:1372001a@cluster0.inrrklr.mongodb.net/?retryWrites=true&w=majority',{
+    // useNewUrlParser: true,
+    // useCreateIndex : true,
+    // useUnifiedToplogy: true,
+    // useFindAndModify : false,
+ }).then(()=>{
+  console.log("connection success")
 
- const db = mongoose.connection;
+ }).catch((err)=>{
+  console.log(err);
+ });
 
- db.on('error', console.error.bind(console, "Error connecting te MongoD8"));
+//  const db = mongoose.connection;
 
-  db.once('open',function(){
+//  db.on('error', console.error.bind(console, "Error connecting te MongoD8"));
 
-    console.log('connected to data base');
-  });
+//   db.once('open',function(){
+
+//     console.log('connected to data base');
+//   });
 
   module.exports= db;
