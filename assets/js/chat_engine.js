@@ -5,7 +5,7 @@ class ChatEngine{
         this.userEmail = userEmail;
 
         //establishing the connection
-        this.socket = io.connect('http://13.82.150.215/:5000',{transports: ['websocket']});// io is global variable available when we include cdn
+        this.socket = io.connect('http://13.82.150.215:5000',{transports: ['websocket']});// io is global variable available when we include cdn
 
         if(this.userEmail){
             this.connectionHandler();
